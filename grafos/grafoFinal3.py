@@ -87,8 +87,8 @@ plt.show()
 
 
 
-for i in range(0,len(nodes)):
-    dictnode[i] = nodes[i]
+# for i in range(0,len(nodes)):
+#     dictnode[i] = nodes[i]
 # print(dictnode)
 # labeldict = {}
 # labeldict[0] = "A"
