@@ -58,19 +58,21 @@ for i in range(0,len(lista)):
             aux.append(lista[j])
     dic[lista[i]] = aux
     aux = []
-print(dic)
-# def show_graph_with_labels(adjacency_matrix, mylabels, accion):
-#     rows, cols = np.where(adjacency_matrix == 1)
-#     edges = zip(rows.tolist(), cols.tolist())
-#     gr = nx.Graph()
-#     if accion == "crear":
-#         gr.add_edges_from(edges)
-#         nx.draw(gr, node_size=500, labels=mylabels, with_labels = True)
-#         plt.show()
-#     if accion == "cortar":
-#         gr.remove_edge(0,1)
-#         nx.draw(gr, node_size=500, labels=mylabels, with_labels = True)
-#         plt.show()
+for clave, valor in dic.items():
+        for nodo in valor:
+                print(clave, " ", nodo)
+                G.add_edge(clave, nodo)
+nx.draw(G, node_size=500, with_labels = True)
+plt.show()
+G2 = nx.Graph()
+G2.add_nodes_from(lista)
+for clave, valor in dic.items():
+        for nodo in valor:
+            if clave != 'A' and nodo != 'A':
+                print(clave, " ", nodo)
+                G2.add_edge(clave, nodo)
+nx.draw(G2, node_size=500, with_labels = True)
+plt.show()
 
 
 
