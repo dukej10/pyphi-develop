@@ -87,4 +87,3 @@ sia = pyphi.compute.sia(subsystem)
 print("MIP: \n", sia.cut)
 print("Phi: \n Φ = ", sia.phi)
 print("Time: \n", sia.time, "s")
-
