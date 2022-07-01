@@ -84,21 +84,3 @@ for clave, valor in dic.items():
                 G2.add_edge(clave, nodo)
 nx.draw(G2, node_size=500, with_labels = True)
 plt.show()
-
-
-
-# for i in range(0,len(nodes)):
-#     dictnode[i] = nodes[i]
-# print(dictnode)
-# labeldict = {}
-# labeldict[0] = "A"
-# labeldict[1] = "B"
-# labeldict[2] = "C"
-
-# show_graph_with_labels(cprueba, dictnode, "crear")
-
-# G = nx.Graph()
-# G.add_node("Kevin Bacon")
-# G.add_node("Tom Hanks")
-# nx.draw(G, node_size=500, with_labels = True)
-# plt.show()
