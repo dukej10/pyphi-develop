@@ -1,3 +1,4 @@
+# Muestra el grafo antes y después
 import os
 import pyphi
 import numpy as np
